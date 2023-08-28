@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="azimMerdivenSite.yonetici.admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <div class="kutu " >  
+<div class="slider" > 
+
+</div>
+
+      <div class="govde" > 
+          <div class="govdesol" > 
+              <div class="govdesolbaslik" >  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MENÜLER  </div>
+              <div class="govdesolicerik" >  
+                  <div style="height:25px; color:#fff;margin-top:3px; font-weight:bolder; background-image:url(../buton.jpg); background-repeat:repeat-y"> &nbsp;&nbsp;&nbsp;<a href="admin.aspx">ANASAYFA </a></div>
+                  <div style="height:25px; color:#fff;margin-top:3px; font-weight:bolder; background-image:url(../buton.jpg); background-repeat:repeat-y"> &nbsp;&nbsp;&nbsp;<a href="korkulukduzen.aspx">KORKULUKLAR  </a>  </div>
+                  <div style="height:25px; color:#fff;margin-top:3px; font-weight:bolder; background-image:url(../buton.jpg); background-repeat:repeat-y">&nbsp;&nbsp;&nbsp;<a href="merdivenduzen.aspx">MERDİVENLER</a>   </div>
+<div style="height:25px; color:#fff; font-weight:bolder;margin-top:3px; background-image:url(../buton.jpg); background-repeat:repeat-y"> &nbsp;&nbsp;&nbsp;<a href="referansduzen.aspx">REFERANSLAR  </a>  </div>
+              </div>
+          </div> 
+          <div class="govdesag" >   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder> 
+
+          </div>
+         
+      </div>
+   
+</div>
+
+    </form>
+</body>
+</html>

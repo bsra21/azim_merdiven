@@ -1,0 +1,246 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="azimMerdivenSite.kullanici.index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" dir="ltr" xml:lang="tr">
+<head runat="server">
+    <title>AZİM MERDİVEN ve KORKULUK SİSTEMLERİ</title>
+
+     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="Merdiven,Azim,Azim Merdiven,merdivenler,MERDIVEN,çelik,gölbaşı merdiven,muğla merdiven,antalya merdiven,izmir merdiven,döner merdiven,korkuluk,korkuluklar,cam,cam korkuluk,tasarım,ankara,Ankara merdiven,Korkuluk,ANKARA,YENİMAHALLE,MERDİVEN"/>
+    <meta name="description" content="AZİM MERDİVEN ve KORKULUK SİSTEMLERİ ANKARA YENİMAHALLE"/>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i"/>
+      <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} 
+html.ie-10 .ie-panel,
+ html.lt-ie-10 .ie-panel {display: block;}
+
+
+
+
+/**/
+      
+
+/* Burası Temeldeki yazı(Anasayfa-Merdiven..)   
+.header-menu{ background:#be985f; position:relative;margin:0 auto; transition: display 2s; }
+.header-menu ul li {height: 30px; position:relative; text-align:center;	padding:0;margin-bottom:0px; transition: display 2s;  }   
+.header-menu ul li a {background:#be985f;color:#fff;text-decoration:none; transition: display 2s; }         .header-menu ul li:hover > a {	background:#be985f;} 
+.header-menu ul li:hover >  ul{ display: block;transition: display 2s; }         
+
+.header-menu  ul li ul{display:none;position:absolute;background:#be985f;width:180px;top:42px; left:0px; z-index:1; margin-top:0px;transition: display 2s; }
+.header-menu  ul li ul a{ background:#be985f; text-align:center; display: block; font-weight:bold;transition: display 2s; }
+
+.header-menu  ul li ul li {background:#be985f;height:35px; text-align:center;transition: display 2s;} .header-menu  ul li ul li :hover >  ul{display:block;transition: display 2s; }
+.header-menu  ul li ul li a{background:#be985f;text-align:center;margin-bottom:2px; transition: display 2s;}
+.header-menu  ul li ul li a:hover{background:#be985f; transition: display 2s;}.header-menu  ul li ul li:hover{background:#be985f; }
+ 
+.header-menu  ul li ul li ul{ width:210px;position:absolute;text-align:center;background:#be985f;top:4px; left:181px; z-index:1; display:none;transition: display 2s;  }
+.header-menu  ul li ul li ul li{ background:#be985f;height:35px; text-align:center;margin-bottom:2px;transition: display 2s;}
+*/ 
+  /*#9b7c4f*/  
+
+
+/**/
+
+    /********************************************************/ /*Açılr hale getirir. liye gelşnce ul kısmı açılıyor. #9b7c4f  */
+.header-menu ul li a {background:#be985f;color:#fff;text-decoration:none;}  .header-menu{ background:#be985f; position:relative;	margin:0 auto;  }
+.header-menu  li{ height: 35px; position:relative; text-align:center;padding:0; }
+.header-menu  ul li ul{display:none;position:absolute;background:#be985f;width:180px;top:35px; left:1px; z-index:1;   }
+.header-menu  ul li ul a{ background:#9b7c4f; text-align:center; display: block; font-weight:bold;} .header-menu  ul li ul li { height:40px; text-align:center;}
+.header-menu  li:hover >  ul{ display: block; }   
+.header-menu  ul li ul li ul{ width:180px;position:absolute;text-align:center;  background:#be985f; top:4px;left:181px; z-index:1; display:none; }
+.header-menu  ul li ul li{display:block;}   .header-menu ul li:hover > a {	background:#be985f;}  
+.header-menu  ul li ul li a{background:#be985f;text-align:center;}
+.header-menu  ul li ul li a:hover{background:#be985f; margin-left:0px; }  .header-menu  ul li ul li:hover{background:#be985f; }    
+.header-menu  ul li ul li ul li{ height:35px; text-align:center;margin-bottom:5px;}
+
+        @media (max-width: 990px) {
+  nav .header-menu a{ display: block; color:white; }
+             .header-menu  ul li ul {display: block;width:300px;text-align:left;left:0px;top:0px;position:relative;
+                                     margin-top:110px;margin-left:0px;z-index:0,5;height:auto;color: #ffffff;
+              }
+             .header-menu ul li ul li ul {display: block;width:300px;position:relative;left:0px;text-align:left; top:60px;
+                                               margin-top:5px;z-index:0,5;height:auto;color: #ffffff;
+                  }
+                  .header-menu ul li ul li a {color: #ffffff;text-align:left; font-weight:normal;
+                  }
+                  .header-menu ul li ul a {color: #ffffff;text-align:left;font-weight:normal;
+                  }
+                  .header-menu  ul li ul li ul li{width:300px; text-align:left;color:white;}
+
+    }
+
+
+      </style>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" action="https://formspree.io/mevlutdurmus407@gmail.com" method="post">
+ <div>
+         <div class="ie-panel"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="Azim Merdiven" /></div>
+             
+        
+     
+        <section class="section section-relative section-header">
+        <!-- Page Header-->
+        <header class="section page-header header-absolute">
+     
+          <div class="rd-navbar-wrap">
+            <nav class="rd-navbar rd-navbar-aside" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+              <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+              <div class="rd-navbar-collapse">
+                <ul class="list rd-navbar-list">
+                  <li><a class="icon icon-sm icon-bordered link-default mdi mdi-facebook" href="https://www.facebook.com/pages/category/Art/Azim-merdiven-350923429009265/"></a></li>
+                  <li><a class="icon icon-sm icon-bordered link-default mdi mdi-instagram" href="https://www.instagram.com/azimmerdiven/"></a></li>
+                </ul>
+             </div>
+            <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                  <!-- RD Navbar Panel-->
+                  <div class="rd-navbar-panel">
+                    <!-- RD Navbar Toggle-->
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <!-- RD Navbar Brand-->
+                    <div class="rd-navbar-brand"><a class="brand" href="default.aspx"><img class="brand-logo-dark" src="images/azimlogo.png" alt="Azim Merdiven" width="232" height="67"/><img class="brand-logo-light" src="images/azimlogo.png" alt="Azim Merdiven" width="86" height="104"/></a>
+                    </div>
+                  </div>
+                 <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                     <div class="header-menu">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="default.aspx">Anasayfa</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="merdivenler.aspx">Merdiven</a>
+                       <ul>
+                                     <li><a href="merdivenler.aspx" class="rd-nav-link" >Çelik Merdiven</a>
+                                        <ul>
+                                            <li><a href="merdivenler.aspx?merdiven=3" class="rd-nav-link" >Orta Omurgalı Merdiven</a></li>
+                                            <li><a href="merdivenler.aspx?merdiven=4" class="rd-nav-link" >Yandan Omurgalı Merdiven</a></li>
+                                            <li><a href="merdivenler.aspx?merdiven=5" class="rd-nav-link" >Alttan Omurgalı Merdiven</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="merdivenler.aspx?merdiven=1" class="rd-nav-link" >Ahşap Merdiven</a></li>
+                                    <li><a href="merdivenler.aspx?merdiven=2" class="rd-nav-link">Tasarım Merdiven</a></li> 
+                                  
+                                </ul>
+                                <!-- Anasayfada sagdaki design yazısını-> Çelik Yapı    -->   
+                            </li>
+                             <li class="rd-nav-item"><a class="rd-nav-link" href="korkuluklar.aspx">Korkuluk</a>
+                             </li>
+                               <li class="rd-nav-item"><a class="rd-nav-link"  href="referans.aspx">Referanslarımız</a>
+                             </li>
+                             <li class="rd-nav-item"><a class="rd-nav-link"  href="iletisim.aspx">İletişim</a>
+                             </li>
+                    </ul>
+                  </div>   </div><!--   -->  
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+          </section>
+
+             
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+          <!-- Page Footer-->
+
+      <div class="pre-footer-classic bg-gray-700 context-dark">
+        <div class="container">
+          <div class="row row-30 justify-content-lg-between">
+            <div class="col-sm-6 col-lg-3 col-xl-3">
+              <h5>ADRES</h5>
+              <ul class="list list-sm">
+                <li>
+                  <p>İvedik OSB Mah.</p>
+                </li>
+                <li>
+                  <p>1363 Cad.</p>
+                </li>
+                <li>
+                  <p>No:54 /ANKARA</p>
+                </li>
+                <li>
+                 
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3">
+              <h5>İletişim</h5>
+              <dl class="list-terms-custom">
+                <dt>Telefon:</dt>
+                <dd><a class="link-default" href="tel:#"> 0533 761 46 33</a></dd>
+                  </dl>
+                  <dl class="list-terms-custom">
+                <dt>          </dt>
+                <dd><a class="link-default" href="tel:#">   0538 846 17 61</a></dd>
+              </dl>
+              <dl class="list-terms-custom">
+                <dt>Email:</dt>
+                <dd><a class="link-default" href="mailto:mevlutdurmus407@gmail.com">mevlutdurmus407@gmail.com</a></dd>
+              </dl>
+              <ul class="list-inline list-inline-sm">
+                <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-facebook" href="https://www.facebook.com/pages/category/Art/Azim-merdiven-350923429009265/"></a></li>
+                <li><a class="icon icon-sm icon-gray-filled icon-circle mdi mdi-instagram" href="https://www.instagram.com/azimmerdiven/"></a></li>
+          
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Newsletter</h5>
+              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap form-wrap-icon">
+                  <div class="form-icon mdi mdi-email-outline"></div>
+                  <input class="form-input" id="footer-email" type="email" name="email" data-constraints="@Email @Required" />
+                  <label class="form-label" for="footer-email">E-mail</label>
+                </div>
+                <div class="button-wrap">
+                  <button class="button button-default button-invariable" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="section footer-classic context-dark text-center">
+        <div class="container">
+          <div class="row row-15 justify-content-lg-between">
+            <div class="col-lg-4 col-xl-3 text-lg-left">
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> Azim Merdiven. Tüm hakkı saklıdır.</p>
+            </div>
+            <div class="col-lg-5 col-xl-6">
+              <ul class="list-inline list-inline-lg text-uppercase">
+                <li><a href="merdivenler.aspx">Merdiven</a></li>
+                <li><a href="korkuluklar.aspx">Korkuluk</a></li>
+                <li><a href="#">Kapı</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+   <%-- </div>--%>     </div>
+    <div class="snackbars" id="form-output-global"></div>
+         <script src="js/core.min.js"></script>
+         <script src="js/script.js"></script>
+
+    <!-- coded by Drel-->
+
+
+    </div>
+ 
+    </form>
+    
+     
+</body>
+</html>
